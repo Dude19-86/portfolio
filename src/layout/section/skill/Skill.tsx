@@ -29,7 +29,6 @@ const StyledSkill = styled.div`
 
 export const IconWrapper = styled.div`
     position: relative;
-    //z-index: 0;
     
     &::before {
         content: "";

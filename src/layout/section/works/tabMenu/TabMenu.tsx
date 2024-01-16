@@ -1,26 +1,39 @@
 import React from 'react';
 import styled from "styled-components";
+import {Link} from "../../../../components/Link";
 
 
-export const Menu = (props: { menuItems: Array<string> }) => {
+export const TabMenu = (props: { menuItems: Array<string> }) => {
     return (
-        <StyledMenu>
+        <StyledTabMenu>
             <ul>
                 {props.menuItems.map((item, i) => {
-                    return <li key={i}>
-                        <a href="">{item}</a>
-                    </li>
+                    return <ListItem key={i}>
+                        <Link href="">{item}</Link>
+                    </ListItem>
                 })}
             </ul>
-        </StyledMenu>
+        </StyledTabMenu>
     );
 };
 
-const StyledMenu = styled.nav`
+const StyledTabMenu = styled.nav`
+    margin-bottom: 40px;
     ul {
         display: flex;
-        gap: 30px;
+        gap: 20px;
         justify-content: center;
     }
 `
+
+const ListItem = styled.li`
+
+`
+
+
+
+
+
+
+
 
